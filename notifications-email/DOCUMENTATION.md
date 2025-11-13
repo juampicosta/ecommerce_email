@@ -330,7 +330,7 @@ Si los datos no son válidos
 
 ```json
 {
-  "error": "Component Layoutttt not found"
+  "error": "Component Layout not found"
 }
 ```
 
