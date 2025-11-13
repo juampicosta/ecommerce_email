@@ -6,7 +6,6 @@ import { dbConnect } from './config/bbdd.js'
 import * as emailService from './rabbit/emailService.js'
 import template from './routes/template.js'
 import component from './routes/component.js'
-import email from './routes/email.js'
 import { authMiddleware } from './middlewares/authMiddleware.js'
 import { permissionsMiddleware } from './middlewares/permissionsMiddleware.js'
 import * as authObserver from './rabbit/auth.js'
@@ -33,7 +32,6 @@ app.use(permissionsMiddleware)
 
 app.use('/api/template', template)
 app.use('/api/component', component)
-app.use('/api/email', email)
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`)
